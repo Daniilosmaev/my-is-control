@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 18px;
+    color: #0074cc;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #0074cc;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+ul li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+ul li::before {
+    content: "✔️";
+    color: green;
+    margin-right: 5px;
+}
+
+.info {
+    font-size: 12px;
+    color: #0074cc;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #0074cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управляйте имеющимся бронированием</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Управляйте имеющимся бронированием</h2>
+        <p>Регистрация не обязательна</p>
+        <form>
+            <div class="form-group">
+                <input type="text" id="order-number" name="order-number" placeholder="Номер заказа">
+            </div>
+            <div class="form-group">
+                <input type="text" id="pin-code" name="pin-code" placeholder="Пин-код">
+            </div>
+            <p class="info">Где я могу найти эту информацию?</p>
+            <button type="button">Вперед</button>
+        </form>
+        <ul>
+            <li>Измените даты</li>
+            <li>Отредактируйте данные гостей</li>
+            <li>Напишите в объект размещения</li>
+            <li>Повысьте категорию номера</li>
+            <li>Отмените бронирование</li>
+            <li>и многое другое</li>
+        </ul>
+        <div class="footer">
+            <p>Не можете найти письмо с подтверждением бронирования?</p>
+            <a href="#">Мы отправим его вам еще раз</a>
+        </div>
+    </div>
+</body>
+</html>
